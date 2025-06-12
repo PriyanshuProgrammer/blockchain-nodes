@@ -39,7 +39,6 @@ export default function Home() {
           if (reward === "0.0") {
             stopMining();
             setStatus("Mining Completed , no reward received.");
-            return;
           } else
             setStatus(
               "Congratulations, you mined first, mining reward: " + reward,
