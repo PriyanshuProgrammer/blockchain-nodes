@@ -2,10 +2,9 @@
 import CreateBlock from "./components/createBlock";
 import { useEffect, useRef, useState } from "react";
 import { nodes, url, reward, status } from "./utils/store";
-import { useAtom, useSetAtom } from "jotai";
+import { useSetAtom } from "jotai";
 import { HandleBlockCreation, stopMining } from "./utils/blockchain";
 import { Block } from "./utils/interface";
-import { STATUS_CODES } from "http";
 
 export default function Home() {
   //states

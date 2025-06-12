@@ -55,13 +55,10 @@ export function HandleBlockCreation(
   ws = socket;
   if (!lastBlock) NewBlockGenesis(stringData, initialBits);
   else NewBlock(stringData, lastBlock.CurrentBlockHash, initialBits);
-
-  console.log(lastBlock);
 }
 
 export function stopMining() {
   if (worker) {
-    console.log("stopping mining");
     worker.terminate();
   }
 }

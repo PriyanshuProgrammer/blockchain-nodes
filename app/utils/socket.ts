@@ -2,7 +2,7 @@ import { Block } from "./interface";
 
 export function onCreateTransaction(socket: WebSocket | null, data: string) {
   if (!socket || !data.trim()) {
-    console.error("Socket is not connected or data is empty");
+    alert("Socket is not connected or data is empty");
     return;
   }
   socket.send(
